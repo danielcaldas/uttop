@@ -1,6 +1,9 @@
 # uttop
 Command line tool for downloading bands/artists top tracks from youtube
 
+<h2>Requirements</h2>
+To use this tool, you must have perl and <b><a href='https://github.com/rg3/youtube-dl'>youtube-dl</a></b> installed.
+
 <h2>Short Description</h2>
 <b>uttols</b> use youtube-dl, and youtube pages, to get the top tracks for a given artist or band, and wrap it all in a folder with the audio files and a little meta-information file about the downloaded tracks [<a href="#usage">jump to usage</a>].
 
