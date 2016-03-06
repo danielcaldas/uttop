@@ -2,7 +2,7 @@
 
 if [ -z "$1" ]; then
   printf "error: Wrong usage of uttop. Use \"./uttop.sh --help\" to view correct usage.\n"
-elif [ $1 == "--help" ] || [ $1 == "?" ]; then
+elif [ "$1" == "--help" ] || [ "$1" == "?" ]; then
   printf "uttop help\n\n"
   printf "usage: uttop [options] band/artist or file.txt\n\n"
   printf "options:\n"
@@ -10,7 +10,7 @@ elif [ $1 == "--help" ] || [ $1 == "?" ]; then
   printf "examples:\n";
   printf "\t./uttop.sh -f bands.txt\n"
   printf "\t./uttop.sh \"The Strokes\"\n"
-elif [ $1 == "-f" ]; then
+elif [ "$1" == "-f" ]; then
   if [ -z "$2" ]; then
     printf "error: No file supplied. Use \"./uttop.sh --help\" to view correct usage.\n"
   else

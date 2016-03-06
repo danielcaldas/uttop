@@ -18,7 +18,7 @@ Command line tool for downloading bands/artists top tracks from youtube
 <h3>Youtube</h3>
 
 <p>Well, lets just say youtube take care of the top tracks...</p>
-<img src='img/youtube.png'/>
+<img src='.img/youtube.png'/>
 
 <p>As you probably have noticed before youtube gives you the top tracks for a given search related to an artist or band, so now putting this pieces together <b>youtube-dl + youtube top tracks</b>, I just had to program a little of HTML parsing to get this done.</p>
 
