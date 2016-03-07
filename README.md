@@ -2,7 +2,18 @@
 Command line tool for downloading bands/artists top tracks from youtube
 
 <h2>Requirements</h2>
-To use this tool, you must have perl and <b><a href='https://github.com/rg3/youtube-dl'>youtube-dl</a></b> installed.
+
+<h3>youtube-dl</h3>
+To use this tool, you must have <b><a href='https://github.com/rg3/youtube-dl'>youtube-dl</a></b> installed.
+
+<h3>Perl Modules</h3>
+You must install some Perl modules that are not usually part of the Perl core modules.
+<ul>
+  <li>utf8::all</li>
+  <li>LWP::Simple</li>
+  <li>HTML::TreeBuilder</li>
+  <li>HTML::TreeBuilder::XPath</li>
+</ul>
 
 <h2>Short Description</h2>
 <b>uttols</b> use youtube-dl, and youtube pages, to get the top tracks for a given artist or band, and wrap it all in a folder with the audio files and a little meta-information file about the downloaded tracks [<a href="#usage">jump to usage</a>].
