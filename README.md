@@ -38,15 +38,15 @@ You must install some Perl modules that are not usually part of the Perl core mo
 
 
 <h2 id="usage">Usage</h2>
-<p>./uttop.sh --help</p>
+<pre>
+./uttop.sh --help
 <p>
 uttop help
-<br/><br/>
 usage: uttop [options] band/artist or file.txt
-<br/><br/>
-options:<br/>
+options:
 &nbsp; -f file 	 &nbsp;give .txt file containing one band/artist per line<br/>
-examples:<br/>
-&nbsp; ./uttop.sh -f bands.txt<br/>
-&nbsp; ./uttop.sh "The Strokes"<br/>
+examples:
+&nbsp; ./uttop.sh -f bands.txt
+&nbsp; ./uttop.sh "The Strokes"
 </p>
+</pre>
