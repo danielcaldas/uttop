@@ -3,7 +3,6 @@
 use warnings;
 use strict;
 use utf8::all;
-use LWP::Simple;
 use HTML::TreeBuilder;
 use HTML::TreeBuilder::XPath;
 
@@ -16,7 +15,8 @@ $arg =~ s/\s+/\%20/g;
 
 my $url = $URL_BASE.$QUERY_BASE.$arg;
 my $tree = HTML::TreeBuilder->new();
-my $youtube_page = get($url);
+
+my $youtube_page = qx{curl --silent $url};
 
 $tree = HTML::TreeBuilder::XPath->new();
 $tree->parse($youtube_page);
