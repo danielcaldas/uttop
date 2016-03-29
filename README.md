@@ -18,7 +18,7 @@ You must install some Perl modules that are not usually part of the Perl core mo
 You must also have <a href="https://curl.haxx.se/">curl</a> installed.
 
 <h2>Short Description</h2>
-<b>uttols</b> use youtube-dl, and youtube pages, to get the top tracks for a given artist or band, and wrap it all in a folder with the audio files and a little meta-information file about the downloaded tracks [<a href="#usage">jump to usage</a>].
+<b>uttop</b> uses youtube-dl, and youtube web pages, to get the top tracks for a given artist or band, and wrap it all in a folder with the audio files and a little meta-information file about the downloaded tracks [<a href="#usage">jump to usage</a>].
 
 <h2>Long Description</h2>
 <p>I always struggle to find ways to get songs from the web, to listen offline, torrents are cool but it takes me while to find out the best one, with the best tracks from the choosen artist or band.</p>
