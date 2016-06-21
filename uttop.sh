@@ -6,7 +6,8 @@ elif [ "$1" == "--help" ] || [ "$1" == "?" ]; then
   printf "uttop help\n\n"
   printf "usage: uttop [options] band/artist or file.txt\n\n"
   printf "options:\n"
-  printf "\t-f file \t give .txt file containing one band/artist per line\n"
+  printf "\t-f [file] \t give .txt file containing one band/artist per line\n"
+  printf "\tlist    \t just list the links and track's info in the terminal\n"
   printf "examples:\n";
   printf "\t./uttop.sh -f bands.txt\n"
   printf "\t./uttop.sh \"The Strokes\"\n"
@@ -18,6 +19,12 @@ elif [ "$1" == "-f" ]; then
     while read l; do
       perl uttop.pl "$l"
     done < $fname
+  fi
+elif [ "$2" == "list" ]; then
+  if [ -z "$2" ]; then
+    printf "error: No artist/band supplied. Use \"./uttop.sh --help\" to view correct usage.\n"
+  else
+    perl uttop.pl $1 $2
   fi
 else
   perl uttop.pl $1
