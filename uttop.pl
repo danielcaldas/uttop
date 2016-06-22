@@ -50,7 +50,6 @@ if(defined $ARGV[1] && $ARGV[1] eq "list") {
   }
   print "----------------------------------------\n\n";
 }
-__END__
 else {
 
   my $folder = $initial_arg;
